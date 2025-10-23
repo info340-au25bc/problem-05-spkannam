@@ -32,7 +32,7 @@ console.log(motto);
 //the old (which you had saved in a variable!). Log out this ratio as a 
 //percentage with two decimal places of precision (e.g., `"123.45%"`).
 //You can use the `.toFixed()` Number method to specify the precision. 
-let ratio = (motto.length / mottoUpdated.length) * 100;
+let ratio = (mottoUpdated.length / motto.length) * 100;
 console.log(ratio.toFixed(2) + "%");
 
 

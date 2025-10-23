@@ -3,7 +3,7 @@
 /* Define a function `addFour()` that takes a single argument 
    and returns a value 4 greater than the input.*/
 function addFour(argument) {
-  return argument + 4
+  return argument + 4;
 }
    
 /* Create and log a variable `twelve` that is the result of passing 8 to your
@@ -42,7 +42,7 @@ function compoundInterest(initial, interest, years) {
    should contain "FizzBuzz" instead of the number.
    The returned array should be empty for arguments less than 1. */
 function fizzBuzz(number) {
-  let result = []
+  let result = [];
   if (number < 1) return result;
 
   for (let i=1; i<=number; i++) {
@@ -69,7 +69,7 @@ function fizzBuzz(number) {
    each letter, increase the value associated with that key by one. Watch out 
    for if the letter is not in the Object yet!
    You can test this method with a word like "Mississippi". */
-function getLetterFrquencies(string) {
+function getLetterFrequencies(string) {
   let frequencies = {};
 
   for (let i=0; i<string.length; i++) {
@@ -84,7 +84,6 @@ function getLetterFrquencies(string) {
   return frequencies;
 }
 
-console.log(getLetterFrquencies("Mississippi"));
 
 /* Create a variable `deck` that represents a deck of modern playing cards
    (https://en.wikipedia.org/wiki/Playing_card). This variable should be an
@@ -156,7 +155,8 @@ function isFlush(hand) {
    cards with the same _rank_) in the array.
    Double challenge: return the rank of the pair of cards with the highest rank 
    (e.g., if the hand contains more than one pair!) */
-function hasPair(hand) {
+
+/* function hasPair(hand) {
   let rankCounts = {};
 
   for (let card of hand) {
@@ -171,7 +171,7 @@ function hasPair(hand) {
       return Math.max(...pairs);
     }
     return false;
-}
+} */
 
 
 //Make functions and variables available to tester. DO NOT MODIFY THIS.
