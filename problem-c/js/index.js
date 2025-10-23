@@ -56,7 +56,7 @@ console.log(opponents);
 //whether or not UW lost.
 function huskiesLost(game) {
   if (game.home === "UW") {
-    return game.home_score < game.home_score;
+    return game.home_score < game.opponent_score;
   } else {
     return game.opponent_score < game.home_score;
   }
@@ -66,12 +66,12 @@ function huskiesLost(game) {
 //array than the games they won!)
 //Log out the array of lost games.
 let lostGames = huskyGames2016.filter(huskiesLost);
-console.log(lostGames);
+console.log(JSON.stringify(lostGames));
 
 //Log out an array of opponents that UW lost to. Hint: Use the `.map()` method 
 //to extract the opponent names!
 let lostToOpponents = lostGames.map(extractOpponent);
-console.log(lostToOpponents);
+console.log(JSON.stringify(lostToOpponents));
 
 //Use a `forEach()` loop to log out each of the games UW lost, each on its own 
 //line, in the following format:
@@ -95,7 +95,7 @@ console.log(fumbleGames.length);
 //Your function should handle the case where the _first_ game has no 
 //`passing_yards` property, in which case it should return the second game.
 function mostYardsPassing(game1, game2) {
-  if (!game1.passing_yards) return game2
+  if (!game1.passing_yards) return game2;
   return (game1.passing_yards > game2.passing_yards) ? game1 : game2;
 }
 
@@ -108,7 +108,7 @@ function mostYardsPassing(game1, game2) {
 //
 //Log out the game with the most passing yards.
 let mostPassingGame = huskyGames2016.reduce(mostYardsPassing, {});
-console.log(mostPassingGame);
+console.log(JSON.stringify(mostPassingGame));
 
 
 //It would be useful to be able to apply multiple "filter criteria" to an array
@@ -140,7 +140,7 @@ let fumbledAndLostFilter = makeCombinedFilter(
 //`fumbledAndLostFilter()` function as a callback to the `filter()` method.
 //Log out the array of games lost with fumbles.
 let lostWithFumbles = huskyGames2016.filter(fumbledAndLostFilter);
-console.log(lostWithFumbles)
+console.log(JSON.stringify(lostWithFumbles));
 
 
 //OPTIONAL extra practice: create a variable `avgScoreDifference` that
