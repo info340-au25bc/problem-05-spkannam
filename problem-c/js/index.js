@@ -50,7 +50,7 @@ function extractOpponent(game) {
 //The opponents in the list do not need to be unique.
 //Log out the opponents array.
 let opponents = huskyGames2016.map(extractOpponent);
-console.log(lostGames);
+console.log(opponents);
 
 //Define a function `huskiesLost()` that takes in a "game" object and returns
 //whether or not UW lost.
