@@ -25,8 +25,7 @@ console.log(hasCool);
 //`motto` variable.
 //Log out the updated motto.
 let mottoUpdated = motto.replace("iSchool", "Information School");
-motto = mottoUpdated;
-console.log(motto);
+console.log(mottoUpdated);
 
 //Calculate the ratio between the length of the updated motto and the length of 
 //the old (which you had saved in a variable!). Log out this ratio as a 
