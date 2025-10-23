@@ -133,7 +133,7 @@ function makeCombinedFilter(callback1, callback2) {
 //Note that `fumbledAndLostFilter` _is_ a function!
 let fumbledAndLostFilter = makeCombinedFilter(
   huskiesLost,
-  function(game) { return game.fumbles > 0; }
+  function(game) { return game.fumbles > 0 }
 );
 
 //Create an array of games that UW lost with fumbles. Use the 
